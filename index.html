@@ -1,18 +1,19 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!-- Tipo de documento, le permite al navegador identificar la versión de HTML que se esta usando. -->
 <html>
 <head>
     <!-- Metadatos del documento -->
     <meta charset="utf-8"><!-- Juego de caracteres del documento, UTF-8 permite acentuar palabras sin  usar caracteres especiales, aunque se recomenda el uso de estos. --> 
-    <meta lang="es"><!-- Lenguaje del documento -->
+    <meta lang="es"><!-- Lenguaje del <documento class="                            "></documento> -->
 	<title>Celeste</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css"><!-- Este archivo hace un reset de las propiedades de TODOS los elementos HTML. Se debe colocar antes de la hoja de estilo propia. -->
+	<link rel="stylesheet" type="text/css" href="css/celeste.css"><!-- Estilos del sitio, se usa un archivo único para todo el sitio. Es la una de las ventajas de las hojas de estilo VS los estilos en el documento mediante la etiqueta <style>. -->
 </head>
 <body>
 	<div id="container"><!-- Contenedor de nuestros elementos, en este caso lo usaremos para centrar el contenido en el navegador -->
 		<header><!-- No confundir la etiqueta <header> con <head>, en <head> definimos metadatos, titulo del documento y hojas de estilo, mientras que el <header> nos permite indicar que es el encabezado, en este caso de nuestro documento. -->
-			<div id="block_menu">
+			<div id="block_menu" class="float_header">
 				<div id="search">
-					<input type="text" name="search" />
-					<img src="images/lupa.png" width="20" height="20" alt="Lupa" />	
+					<input type="text" name="search" /><button><img src="images/lupa.png" width="20" height="20" alt="Lupa" /></button>
 				</div>
 				<nav>
 					<ul>
@@ -22,8 +23,7 @@
 						<li><a href="#" title="Inico">INICIO</a></li>
 					</ul>
 				</nav>
-			</div>
-			<div id="ribbons">
+			</div><div id="ribbons" class="float_header"><!-- Nos apoyamos de la clase .float_header para poder utilizar estos dos contenedores como elementos inline. Se quita el espacio entre los dos <div> que se van a emplear con esta clase, ya que HTML interpreta que existe un espacio entre los TAG's y no quedan visualmente uno al lado del otro, por lo que no los podríamos conservar con los tamaños establecidos por 1px de ese espacio. -->
 				<a href="#" title="Home"><img src="images/home.png" alt="Home" width="20" height="20" /></a>
 				<a href="#" title="Email"><img src="images/mail.png" alt="Email" width="20" height="20" /></a>
 			</div>

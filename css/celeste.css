@@ -1,0 +1,96 @@
+/* Font Face es una propiedad CSS3 que permite utilizar una fuente "personalizada" para el diseño del documento. */
+@font-face {
+    font-family: 'league_gothicregular';
+    src: url('leaguegothic-regular-webfont.eot');
+    src: url('leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('leaguegothic-regular-webfont.woff2') format('woff2'),
+         url('leaguegothic-regular-webfont.woff') format('woff'),
+         url('leaguegothic-regular-webfont.ttf') format('truetype'),
+         url('leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'league_gothicCnRg';
+    src: url('leaguegothic-condensedregular-webfont.eot');
+    src: url('leaguegothic-condensedregular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('leaguegothic-condensedregular-webfont.woff2') format('woff2'),
+         url('leaguegothic-condensedregular-webfont.woff') format('woff'),
+         url('leaguegothic-condensedregular-webfont.ttf') format('truetype'),
+         url('leaguegothic-condensedregular-webfont.svg#league_gothicCnRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Establecemos los valores que aplicaran para todo el documento. Recordar que <body> contiene todos los elementos que se visualizan en el navegador. */
+body{
+	font-size: 18px;
+	font-family: 'league_gothicregular';
+	/* Al final borrar backgroun-color */
+	background-color: #000;
+}
+/* El elemento <div id="container"> como ya se mencionaba en el archivo HTML, nos va a permitir centrar nuestro contenido en el navegador. */
+#container{
+	/* Al final borrar background-color */
+	background-color: #fff;
+	width: 980px;
+	margin: 0 auto; /* Margin se define mediante cuatro puntos: top(arriba), right(derecha), bottom(abajo), left(izquierda). Se declaran en ese orden para establecer margenes distintos para cada lado, en el caso de usar sólo dos valores se considera el primer valor para top-bottom y el segundo para right-left. En el caso de un valor único se considera para los cuatro lados. */
+}
+.float_header{
+	display: inline-block; /* Este valor nos permite utilizar el elemento como un elemento "inline" sin perder las propiedades del elemento "block" */
+	padding: 10px;
+}
+header #block_menu{
+	width: 850px;
+	text-align: right;
+}
+header #block_menu #search{
+    padding-top: 2px;
+}
+header #block_menu #search input{
+    background-color: #e8e1db;
+    border: none;
+    padding: 6px 3px 7px 3px; /* Se usaron estos valor de padding para dejar del mismo tamaño que el boton de busqueda */
+}
+header #block_menu #search button{
+    background-color: #e8e1db;
+    padding: 5px 2px 0 2px;
+    border: none;
+    vertical-align: top; /* Se usa nuevamente vertical-align para que el elemento <input> este alineado en el borde superior con el <input> */
+    margin-right: 10px; /* Sólo para que se vea alineado con el menu */
+}
+header #ribbons{
+	width: 90px;
+	padding: 0 10px;
+	vertical-align: top;
+}
+header #block_menu nav li{
+	display: inline-block;
+	padding: 2px 10px;
+	border-left: 1px solid #aaa;
+}
+header #block_menu nav li:first-child{ /* Sólo afecta al primer elemento <li> que se encuentra dentro del <nav> */
+	border: none;
+}
+header nav li a{
+	color: #aaaaaa;
+	text-decoration: none;
+}
+header nav li a:hover{
+	color: #5fb7c6;
+	text-decoration: underline;
+}
+header nav{
+	margin-top: 10px;
+}
+#ribbons a{
+	background-color: #5fb7c6;
+	padding: 10px;
+	display: inline-block;
+}
+#ribbons a:first-child{
+	margin-right: 6px;
+}
+#ribbons img{
+	margin-top: 35px;
+}
