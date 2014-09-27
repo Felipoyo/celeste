@@ -119,3 +119,47 @@ header nav li a:hover{
 #inner_container nav .titulo{
 	color:#5fb7c6;
 }
+#inner_container section{
+	margin-top: 50px;
+}
+#inner_container article{
+	width: 220px;
+	min-height: 480px;
+	margin: 0 7px;
+	background-color: #e8e1db;
+	display: inline-block;
+	vertical-align: top; /* Se usa esta propiedad para que en el momento de que el contenido del artículo aumenta se mantenga alineado en la parte superior. */
+	position: relative; /* Se establece la posición del elemento como relativa para poder contener elementos de posicionamiento absoluto. */
+}
+#inner_container header{
+	padding: 5px;
+}
+#inner_container header div p{
+	color: #9f9f9f;
+	display: inline-block;
+	border-right: 1px solid #9f9f9f;
+	font-size: 14px;
+	padding: 2px 4px;
+}
+#inner_container header div p:last-child{
+	border: none;
+}
+#inner_container article .inner_content img{
+	display: block;
+	width: 138px;
+	margin: 10px auto;
+}
+#inner_container article .inner_content p{
+	padding: 10px;
+}
+#inner_container article footer{
+	position: absolute; /* Se le da un posicionamiento absoluto para que siempre se encuentre al final del bloque del artículo. */
+	bottom: 0; /* Alineamos con una distancia de 0 respecto al borde inferior. */
+	left: 0; /* Alineamos respecto al borde izquierdo. */
+	width: 220px; /* Establecemos el ancho del elemento ya que al ser absoluto se comporta como un elemento "inline". */
+}
+#inner_container article footer p{
+	color: #9f9f9f;
+	text-align: right;
+	padding-right: 10px; /* Se establece para separar del borde del contenedor <article>. */
+}
